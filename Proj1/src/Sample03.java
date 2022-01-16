@@ -20,12 +20,24 @@ public class Sample03 {
 		int r = new java.util.Random().nextInt(80);
 		System.out.println("あなたはたぶん" + r + "際ですね。");
 		
-//		入力を受け取る命令(Int)
-		int input = new java.util.Scanner(System.in).nextInt();
-		System.out.println("数字は" + input + "ですね。");
-//      入力を受け取る命令(String)
+////		入力を受け取る命令(Int)
+//		int input = new java.util.Scanner(System.in).nextInt();
+//		System.out.println("数字は" + input + "ですね。");
+////      入力を受け取る命令(String)
+//		
+//		String s = new java.util.Scanner(System.in).nextLine();
+//		System.out.println("入力した文字は" + s + "です。");
 		
-		String s = new java.util.Scanner(System.in).nextLine();
-		System.out.println("入力した文字は" + s + "です。");
+		
+		int x = 5;
+		int y = 3;
+		String ana = "x+yは" + (x * y);
+		System.out.println(ana);
+		
+		String s = 2 + "oo";
+		System.out.println(s);
+		
+		double t = 3 + 5.0;
+		System.out.println(t);
 	}
 }
