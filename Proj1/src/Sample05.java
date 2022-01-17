@@ -59,6 +59,5 @@ public class Sample05 {
 	System.out.println("");
 	}
 	
-	
    }
 }
