@@ -39,5 +39,7 @@ public class Sample03 {
 		
 		double t = 3 + 5.0;
 		System.out.println(t);
+		
+		
 	}
 }
