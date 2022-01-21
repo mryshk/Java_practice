@@ -39,7 +39,7 @@ public class arguments_array {
 //	
 	
 //	戻り値に配列を用いる場合
-
+//　呼び出し元
 	public static void main(String[] args) {
 		int [] array = makeArray(5);
 		
@@ -47,7 +47,7 @@ public class arguments_array {
 			System.out.println(i);
 		}
 	}
-	
+//	呼び出し先
 	public static int [] makeArray(int size) {
 		int [] newArray = new int[size];
 		
