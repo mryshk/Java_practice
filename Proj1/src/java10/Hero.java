@@ -4,6 +4,10 @@ public class Hero {
 	String name = "ミナト";
 	int hp = 100;
 	
+	public Hero() {
+		System.out.println("Heroのコントラクタが動作");
+	}
+	
 	public final void slip() {
 		this.hp -= 5;
 		System.out.println(this.name + "は転んだ！");
