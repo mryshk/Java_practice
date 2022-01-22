@@ -30,8 +30,16 @@ public class Hero {
 	}
 	
 //	コンストラクタ　newした直後に自動的に実行される。
-	public Hero() {
+	public Hero(String name) {
 		this.hp = 100;
+		this.name = name;
+	}
+	
+//	this（引数）によって、引数ありのHeroコントラクタを呼び出した。
+//	これは、Heroコンストラクタの引数ありなしの中で共通項が存在し、いちいち打つのがめんどくさいから。
+//	あと、その共通項に変更がある場合、両方変更しないといけないため。
+	public Hero() {
+		this("なし");
 	}
 
 }
