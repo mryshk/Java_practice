@@ -62,8 +62,12 @@ public class Main {
 //	   w.heal(h2);
 //	   w.heal(h2);
 	   
-	   Hero h = new Hero();
+	   Hero h = new Hero("ミナト");
 	   System.out.println(h.hp);
+	   System.out.println(h.name);
+	  
+	   Hero h2 = new Hero();
+	   System.out.println(h2.name + h2.hp);
 	   
    }
 }
