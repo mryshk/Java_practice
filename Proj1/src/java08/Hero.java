@@ -3,6 +3,7 @@ package java08;
 public class Hero {
 	String name;
 	int hp;
+	Sword sword;
 	
 	
 	public void sleep(){
@@ -26,6 +27,11 @@ public class Hero {
 		System.out.println(this.name + "は、逃げ出した");
 		System.out.println("GAMWOVER");
 		System.out.println("最終HPは、" + this.hp + "でした。");
+	}
+	
+//	コンストラクタ　newした直後に自動的に実行される。
+	public Hero() {
+		this.hp = 100;
 	}
 
 }
