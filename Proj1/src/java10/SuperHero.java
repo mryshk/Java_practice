@@ -2,6 +2,10 @@ package java10;
 
 public class SuperHero extends Hero {
 	boolean flying;
+	
+	public SuperHero() {
+		System.out.println("SuperHeroのコントラクタが動作");
+	}
 	public void fly() {
 		this.flying = true;
 		System.out.println("飛び上がった！");
@@ -14,6 +18,12 @@ public class SuperHero extends Hero {
 	
 	public void run() {
 		System.out.println(this.name + "は撤退した。");
+	}
+	public void attack(Matango m) {
+		super.attack(m);
+		if (this.flying) {
+			super.attack(m);
+		}
 	}
 
 }
