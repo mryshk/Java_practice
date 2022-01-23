@@ -1,4 +1,4 @@
-package java12;
+package java11;
 
 public class Dancer extends Character {
 	public void dance() {
