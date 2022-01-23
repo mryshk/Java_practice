@@ -1,4 +1,4 @@
-package java12;
+package java11;
 
 public abstract class Character {
 	String name;
