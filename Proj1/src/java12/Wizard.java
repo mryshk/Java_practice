@@ -12,12 +12,16 @@ public class Wizard extends Character{
 		super(name);
 	}
 	
-	public void attack(Matango m) {
-		System.out.println(this.name + "の攻撃");
+	public void attack(Monster m) {
+		System.out.println(this.name + "の攻撃" + m.name + "ヘ");
 	}
 	
-	public void fireball(Matango m) {
+	public void fireball(Monster m) {
 		System.out.println(this.name + "の炎の攻撃");
+	}
+	
+	public void run() {
+		System.out.println("魔法使い" + this.name + "は逃げ出した。");
 	}
 
 }
