@@ -51,6 +51,12 @@ public class Main {
 		String s = sb.toString();
 		
 		System.out.println(s);
+		
+		Hero h1 = new Hero();
+		if (h1.isValidPlayerName("A0980000")) {
+			System.out.println("OKです");
+		}
+		
 	}
 	
 
