@@ -14,12 +14,27 @@ public class Main {
 //		}catch(NullPointerException e) {
 //			System.out.println("nullだよ");
 //		}
+//		FileWriter fw = null;
+//		try {
+//			fw = new FileWriter("data.txt");
+//			fw.write("hello");
+//			System.out.println("うまくいきました");
+//			
+//		}catch(Exception e) {
+//			System.out.println("何らかのエラーがおきました。");
+//		}finally {
+//			if (fw != null) {
+//				try {
+//					fw.close();
+//				}catch(IOException e){
+//					;
+//				}
+//			}
+//			
+//		}
 		
-		try {
-			FileWriter fw = new FileWriter("/Users/yoshikimuro/Desktop/text.txt");
-			fw.write("hello");
-			fw.close();
-			
+		try (FileWriter fw = new FileWriter("data.txt");){
+			fw.write("Hello");
 		}catch(Exception e) {
 			System.out.println("何らかのエラーがおきました。");
 		}
