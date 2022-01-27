@@ -33,6 +33,7 @@ public class Main {
 //			
 //		}
 		
+//		try()によってfinalyが自動適用される。
 		try (FileWriter fw = new FileWriter("data.txt");){
 			fw.write("Hello");
 		}catch(Exception e) {
