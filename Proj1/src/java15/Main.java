@@ -8,9 +8,23 @@ public class Main {
 		String s4 = "Java and Javascript";
 		String s5 = "abc,def:ghi";
 		
+		
+		Valid va = new Valid();
+		
+		va.name = "A090923OD";
+		
+		if (va.isValidPlayerName(va.name)) {
+			System.out.println("OK");
+		}else {
+			System.out.println("No");
+		}
+		
+		
 		if (s2.equals(s3)) {
 			System.out.println("s2とs3は等しい");
 		}
+		
+		
 		
 		if (s2.equalsIgnoreCase(s3)) {
 			System.out.println("s2とs3はケースを区別しなければ正しい。");
@@ -42,6 +56,11 @@ public class Main {
 		
 		String re = s5.replaceAll("[bcf]", "X");
 		System.out.println(re);
+		
+		String rep = s4.replaceAll("[a]", "A");	
+		System.out.println(rep);
+		
+		
 		
 		StringBuilder sb = new StringBuilder();
 		
