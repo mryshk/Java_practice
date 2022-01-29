@@ -29,6 +29,9 @@ public class Main {
 		if (s2.equalsIgnoreCase(s3)) {
 			System.out.println("s2とs3はケースを区別しなければ正しい。");
 		}
+		if (s2.equalsIgnoreCase(s3)) {
+			System.out.println("s2とs3はケースを区別しなければいけない。");
+		}
 		
 		System.out.println("s1の長さは"+ s1.length()+"です。");
 		
