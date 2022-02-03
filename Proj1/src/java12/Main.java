@@ -10,7 +10,7 @@ public class Main {
 //		c.attack(m);
 //		
 		Slime s = new Slime("スライム1"); Monster mo = new Slime("スライム2");
-		Monster dragon = new Dragon("ドラゴン2");
+		Monster dragon = new Dragon("dragon~xys");
 //		s.run();
 //		mo.run();
 //		dragon.run();
@@ -31,11 +31,21 @@ public class Main {
 		Hero hero = new Hero("yeah");
 		Wizard wizard = new Wizard("魔法使い１");
 		
+		Hero hero2 = new Hero("yoshiki");
+		Wizard wiz = new Wizard("wizard");
+		
 		hero.attack(dragon);
 		wizard.attack(s);
 		
+		hero2.attack(dragon);
+		wiz.fireball(dragon);
 		
+		Plant pl = new Care_plant("草");
 		
+		pl.care(wiz);
+		pl.setName("草生えe");
+		
+		System.out.println("ようこそ" + pl.getName());
 		
 	}
 	
