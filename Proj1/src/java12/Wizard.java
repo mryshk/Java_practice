@@ -17,7 +17,7 @@ public class Wizard extends Character{
 	}
 	
 	public void fireball(Monster m) {
-		System.out.println(this.name + "の炎の攻撃");
+		System.out.println(this.name + "の炎の攻撃" + m.name + "へ");
 	}
 	
 	public void run() {
