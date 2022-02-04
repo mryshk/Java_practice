@@ -40,6 +40,11 @@ public class Main {
 			System.out.println("何らかのエラーがおきました。");
 		}
 		
+		try (FileWriter fw2 = new FileWriter("data.txt");){
+			fw2.write("World");
+		}catch(Exception e) {
+			System.out.println("何らかのエラーがおきました。");
+		}
 		
 		
 	}
