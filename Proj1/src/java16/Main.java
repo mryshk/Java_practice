@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -82,6 +83,7 @@ public class Main {
 			System.out.print(w + "と");
 		}
 		
+		
 		Map<String, Integer> prefs = new HashMap<String, Integer>();
 		prefs.put("京都府",255);
 		prefs.put("東京都",1261);
@@ -90,9 +92,36 @@ public class Main {
 		int Tokyo = prefs.get("東京都");
 		System.out.println("東京都の人口は"+ Tokyo);
 		
+//		まずはキーをとりだす。
+//		そのキーをgetメソッドの引数に持っていき、
+//		getメソッドで獲得したvalueを変数格納。
+//		最後に変数にて出力する。
+		
 		for (String key : prefs.keySet()) {
 			int value = prefs.get(key);
 			System.out.println(key + "の人口は" + value);
+		}
+		
+		Hero h1 = new Hero("斉藤");
+		Hero h2 = new Hero("鈴木");
+		
+		List<Hero> member = new ArrayList<>();
+		member.add(h1);
+		member.add(h2);
+		
+		for (Hero n : member) {
+			System.out.println(n.getName());
+		}
+		
+		
+		Map<Hero, Integer> result = new HashMap<Hero, Integer>();
+		
+		result.put(h1,3);
+		result.put(h2, 8);
+		
+		for (Hero key : result.keySet()) {
+			int value = result.get(key);
+			System.out.println(key.getName() + "が倒した敵 = " + value);
 		}
 		
 		
